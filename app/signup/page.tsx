@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Checkbox, Google, PasswordField, TextField } from '@/components/loginField'
 import Logo from '@/components/logo'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -10,12 +11,12 @@ export default function Page({ }: Props) {
     <>
       <div className='flex flex-row w-full h-screen overflow-hidden'>
         <div className='h-full relative lg:w-1/2 w-full bg-gray-950 flex flex-col justify-center items-center'>
-          <a href="/login" className='absolute cursor-pointer top-4 font-semibold right-4 bg-orange-600 text-black px-3 w-32 flex justify-between items-center py-2 rounded-lg'>
+          <Link href="/login" replace={true} className='absolute cursor-pointer top-4 font-semibold right-4 bg-orange-600 text-black px-3 w-32 flex justify-between items-center py-2 rounded-lg'>
             <div>Log In</div>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
             </svg>
-          </a>
+          </Link>
           <form className='lg:w-[32rem] w-96 flex flex-col h-fit space-y-6 text-orange-300'>
             <div className='text-2xl text-center font-semibold'>Sign Up</div>
             <TextField field='Username' id="username" />

@@ -6,12 +6,13 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className='h-screen w-full fixed inset-0 flex flex-col justify-center items-center'>
-        <div className='text-6xl text-white font-bold py-8 text-center'><span className='text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-emerald-300'>CoffeeShop</span></div>
-        <div className='text-lg px-3 text-orange-200 font-extralight text-center'>Find your new favourite coffee and share it with the rest of the world</div>
-        <div className='grid gap-4 md:grid-flow-col grid-flow-row place-content-center mt-8 flex-wrap w-fit'>
-          <Link href='/coffee' className='block text-center w-72 font-semibold hover:bg-orange-900 py-4 bg-orange-800 rounded-lg text-lg text-white'>Meet Our Coffee</Link>
-          <Link href='/signup' className='block text-center w-72 font-semibold hover:bg-emerald-900 py-4 bg-emerald-800 rounded-lg text-lg text-white'>Join Us</Link>
+      <main className='fixed inset-0 flex flex-col items-center justify-center w-full h-screen'>
+        <Image src='/coffee.svg' alt="Coffee" width={250} height={250} className='object-cover w-3/12 lg:w-1/12 md:w-2/12' />
+        <div className='py-8 text-6xl font-bold text-center text-white'><span className='text-transparent bg-clip-text bg-gradient-to-r dark:from-orange-300 dark:to-emerald-300 from-orange-700 to-emerald-700'>CoffeeShop</span></div>
+        <div className='px-3 text-lg font-normal text-center text-orange-950 dark:text-orange-200 dark:font-extralight'>Find your new favourite coffee and share it with the rest of the world</div>
+        <div className='grid flex-wrap grid-flow-row gap-4 mt-8 md:grid-flow-col place-content-center w-fit'>
+          <Link href='/coffee' className='block py-4 text-lg font-semibold text-center text-white bg-orange-800 rounded-lg w-72 hover:bg-orange-900'>Meet Our Coffee</Link>
+          <Link href='/signup' className='block py-4 text-lg font-semibold text-center text-white rounded-lg w-72 hover:bg-emerald-900 bg-emerald-800'>Join Us</Link>
         </div>
       </main>
     </>

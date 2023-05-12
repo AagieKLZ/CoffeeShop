@@ -2,14 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: rgb(67,20,7);
-  background: -moz-radial-gradient(circle, rgba(67,20,7,1) 0%, rgba(3,7,18,1) 50%);
-  background: -webkit-radial-gradient(circle, rgba(67,20,7,1) 0%, rgba(3,7,18,1) 50%);
-  background: radial-gradient(circle, rgba(67,20,7,1) 0%, rgba(3,7,18,1) 50%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#431407",endColorstr="#030712",GradientType=1);
-  @apply h-screen w-full;
+@media (prefers-color-scheme: dark){
+  body {
+    background: rgb(67,20,7);
+    background: -moz-radial-gradient(circle, rgba(67,20,7,1) 0%, rgba(3,7,18,1) 50%);
+    background: -webkit-radial-gradient(circle, rgba(67,20,7,1) 0%, rgba(3,7,18,1) 50%);
+    background: radial-gradient(circle, rgba(67,20,7,1) 0%, rgba(3,7,18,1) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#431407",endColorstr="#030712",GradientType=1);
+    @apply min-h-screen w-full;
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-color-scheme: light){
+body{
+  @apply min-h-screen w-full bg-yellow-50;
   scroll-behavior: smooth;
+}
 }
 
 @keyframes card-in {

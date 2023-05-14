@@ -6,7 +6,7 @@ export default function Filters({}: Props) {
   return (
     <form className="flex items-center justify-around w-full px-2 mt-4">
       <div className="flex">
-        <label htmlFor="roast" className="py-1 mr-2 text-lg text-orange-900 dark:text-orange-200">
+        <label htmlFor="roast" className="py-1 mr-2 text-lg text-orange-900">
           Roast
         </label>
         <select
@@ -23,7 +23,7 @@ export default function Filters({}: Props) {
         </select>
       </div>
       <div className="flex">
-        <label htmlFor="origin" className="py-1 mr-2 text-lg text-orange-900 dark:text-orange-200">
+        <label htmlFor="origin" className="py-1 mr-2 text-lg text-orange-900">
           Origin
         </label>
         <select
@@ -40,7 +40,7 @@ export default function Filters({}: Props) {
         </select>
       </div>
       <div className="flex">
-        <label htmlFor="sort" className="py-1 mr-2 text-lg text-orange-900 dark:text-orange-200">
+        <label htmlFor="sort" className="py-1 mr-2 text-lg text-orange-900 ">
           Order By
         </label>
         <select

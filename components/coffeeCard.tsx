@@ -32,7 +32,7 @@ export default function CoffeeCard({ index, data }: Props) {
           className="object-cover w-full h-full opacity-50 rounded-xl"
         />
       </div>
-      <div className="relative z-50 flex flex-col justify-between h-full p-4 bg-opacity-80 dark:bg-opacity-80 backdrop-blur-sm bg-orange-950 rounded-xl">
+      <div className="relative z-50 flex flex-col justify-between h-full p-4 bg-opacity-80 backdrop-blur-sm bg-orange-950 rounded-xl">
         <div>
           <div className="text-xl font-semibold text-white">{data.name}</div>
           <div className="flex flex-row flex-wrap w-full">
@@ -91,7 +91,7 @@ export default function CoffeeCard({ index, data }: Props) {
         </div>
         <div className="flex flex-row items-center justify-between w-full mt-4">
           <Link
-            href={`./coffee/${encodeURI(data.name)}`}
+            href={`./coffees/${encodeURI(data.name)}`}
             className="flex justify-between px-2 py-2 text-center text-orange-200 bg-orange-800 rounded-lg w-36 hover:bg-orange-700"
           >
             <div>Learn More</div>

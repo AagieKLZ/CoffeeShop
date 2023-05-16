@@ -12,7 +12,7 @@ export default function BackBtn({}: Props) {
   useEffect(() => {
     window.addEventListener("keydown", e => {
         if (e.key === "Escape") {
-            onClick()
+            router.back();
         }
         }
     );

@@ -36,9 +36,9 @@ export default async function Page({ params }: { params: { name: string } }) {
           <div className='xl:w-1/2 w-2/3 h-full py-4 xl:h-[60vh] px-4 animate-in slide-in-from-left-1/2 duration-200'>
             <Image src="/beans.jpg" alt="Coffee" width={1200} height={1000} className='object-cover h-[50vh]' />
           </div>
-          <div className='flex flex-col w-full h-full px-12 duration-200 border-l-2 xl:w-1/2 border-l-orange-500 animate-in slide-in-from-right-1/2'>
-            <div className='w-full text-2xl font-semibold text-left text-orange-900'>{coffee.name}</div>
-            <div className='w-full italic font-semibold text-left text-orange-800 text-md'>{coffee.roaster}</div>
+          <div className='flex flex-col w-full h-full px-12 duration-200 border-l-2 xl:w-1/2 border-l-coffee-500 animate-in slide-in-from-right-1/2'>
+            <div className='w-full text-2xl font-semibold text-left text-coffee-900'>{coffee.name}</div>
+            <div className='w-full italic font-semibold text-left text-coffee-800 text-md'>{coffee.roaster}</div>
             <div className='flex flex-row flex-wrap w-full my-4'>
               <div className='flex flex-row items-center justify-start px-4 py-1 mt-4 mr-4 rounded-full w-fit bg-emerald-900 text-emerald-200'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className='fill-emerald-200'>
@@ -74,11 +74,11 @@ export default async function Page({ params }: { params: { name: string } }) {
               <span className="text-3xl text-gray-300">★</span>
               <div className='ml-4 text-2xl font-semibold text-rose-700'>{(coffee.rating / 20).toFixed(1)}</div>
             </div>
-            <div className='mt-4 text-orange-800 text-light'>
+            <div className='mt-4 text-coffee-800 text-light'>
               {/* Produced by the Stille family entirely of the Gesha (also spelled Geisha) variety of Arabica, and processed by the washed method (fruit skin and flesh are removed from the beans before they are dried). This is an early harvest of the Monarch Estate Hawaiian Gesha and roasted a bit darker than the farm’s main harvest of that variety. Monarch Coffee is an award-winning coffee farm and specialty roaster of 100% estate-grown Kona coffee on the Big Island of Hawai’i. Visit www.monarchcoffee.com for more information. */}
               {coffee.desc_2}
             </div>
-            <div className='flex flex-col mt-8 border-t border-t-orange-800'>
+            <div className='flex flex-col mt-8 border-t border-t-coffee-800'>
               <AmountField pack='200g Pack' price={Number((coffee.g_USD * 2).toFixed(2))} base={Number(coffee.g_USD.toFixed(2))} />
               <AmountField pack='400g Pack' price={Number((coffee.g_USD * 4 * 0.95).toFixed(2))} base={Number((coffee.g_USD*0.95).toFixed(2))} />
               <AmountField pack='600g Pack' price={Number((coffee.g_USD * 6 * 0.9).toFixed(2))} base={Number((coffee.g_USD*0.9).toFixed(2))} />

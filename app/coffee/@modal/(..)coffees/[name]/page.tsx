@@ -40,11 +40,11 @@ export default async function Page({ params }: { params: { name: string } }) {
                 className="object-cover h-[50vh]"
               />
             </div>
-            <div className="flex flex-col w-full h-full px-12 duration-200 border-l-2 xl:w-1/2 border-l-orange-500 animate-in slide-in-from-right-1/2">
-              <div className="w-full text-2xl font-semibold text-left text-orange-900">
+            <div className="flex flex-col w-full h-full px-12 duration-200 border-l-2 xl:w-1/2 border-l-coffee-500 animate-in slide-in-from-right-1/2">
+              <div className="w-full text-2xl font-semibold text-left text-coffee-900">
                 {coffee.name}
               </div>
-              <div className="w-full italic font-semibold text-left text-orange-800 text-md">
+              <div className="w-full italic font-semibold text-left text-coffee-800 text-md">
                 {coffee.roaster}
               </div>
               <div className="flex flex-row flex-wrap w-full my-4">
@@ -119,10 +119,10 @@ export default async function Page({ params }: { params: { name: string } }) {
                   {(coffee.rating / 20).toFixed(1)}
                 </div>
               </div>
-              <div className="mt-4 text-orange-800 text-light">
+              <div className="mt-4 text-coffee-800 text-light">
                 {coffee.desc_2}
               </div>
-              <div className="flex flex-col mt-8 border-t border-t-orange-800">
+              <div className="flex flex-col mt-8 border-t border-t-coffee-800">
                 <AmountField
                   pack="200g Pack"
                   price={Number((coffee.g_USD * 2).toFixed(2))}

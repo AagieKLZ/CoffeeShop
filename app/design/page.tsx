@@ -5,19 +5,19 @@ type Props = {}
 export default function Page({}: Props) {
   return (
     <div className='flex flex-row w-full'>
-    <div className='flex flex-col w-1/4'>
-        <div className='w-full h-12 bg-orange-100'></div>
-        <div className='w-full h-12 bg-orange-200'></div>
-        <div className='w-full h-12 bg-orange-300'></div>
-        <div className='w-full h-12 bg-orange-400'></div>
-        <div className='w-full h-12 bg-orange-500'></div>
-        <div className='w-full h-12 bg-orange-600'></div>
-        <div className='w-full h-12 bg-orange-700'></div>
-        <div className='w-full h-12 bg-orange-800'></div>
-        <div className='w-full h-12 bg-orange-900'></div>
-        <div className='w-full h-12 bg-orange-950'></div>
+    <div className='flex flex-col w-1/3'>
+        <div className='w-full h-12 bg-coffee-100'></div>
+        <div className='w-full h-12 bg-coffee-200'></div>
+        <div className='w-full h-12 bg-coffee-300'></div>
+        <div className='w-full h-12 bg-coffee-400'></div>
+        <div className='w-full h-12 bg-coffee-500'></div>
+        <div className='w-full h-12 bg-coffee-600'></div>
+        <div className='w-full h-12 bg-coffee-700'></div>
+        <div className='w-full h-12 bg-coffee-800'></div>
+        <div className='w-full h-12 bg-coffee-900'></div>
+        <div className='w-full h-12 bg-coffee-950'></div>
     </div>
-    <div className='flex flex-col w-1/4'>
+    <div className='flex flex-col w-1/3'>
         <div className='w-full h-12 bg-rose-100'></div>
         <div className='w-full h-12 bg-rose-200'></div>
         <div className='w-full h-12 bg-rose-300'></div>
@@ -29,24 +29,17 @@ export default function Page({}: Props) {
         <div className='w-full h-12 bg-rose-900'></div>
         <div className='w-full h-12 bg-rose-950'></div>
     </div>
-    <div className='flex flex-col w-1/4'>
-        <div className='w-full h-12 bg-emerald-100'></div>
-        <div className='w-full h-12 bg-emerald-200'></div>
-        <div className='w-full h-12 bg-emerald-300'></div>
-        <div className='w-full h-12 bg-emerald-400'></div>
-        <div className='w-full h-12 bg-emerald-500'></div>
-        <div className='w-full h-12 bg-emerald-600'></div>
-        <div className='w-full h-12 bg-emerald-700'></div>
-        <div className='w-full h-12 bg-emerald-800'></div>
-        <div className='w-full h-12 bg-emerald-900'></div>
-        <div className='w-full h-12 bg-emerald-950'></div>
-    </div>
-    <div className='flex flex-col w-1/4'>
-        <div className='w-full h-12 bg-primary'></div>
-        <div className='w-full h-12 bg-primary-medium'></div>
-        <div className='w-full h-12 bg-primary-dark'></div>
-        <div className='w-full h-12 bg-primary-darker'></div>
-        <div className='w-full h-12 bg-secondary'></div>
+    <div className='flex flex-col w-1/3'>
+        <div className='w-full h-12 bg-coffee-50'></div>
+        <div className='w-full h-12 bg-coffee-100'></div>
+        <div className='w-full h-12 bg-coffee-200'></div>
+        <div className='w-full h-12 bg-coffee-300'></div>
+        <div className='w-full h-12 bg-coffee-400'></div>
+        <div className='w-full h-12 bg-coffee-500'></div>
+        <div className='w-full h-12 bg-coffee-600'></div>
+        <div className='w-full h-12 bg-coffee-700'></div>
+        <div className='w-full h-12 bg-coffee-800'></div>
+        <div className='w-full h-12 bg-coffee-900'></div>
     </div>
     </div>
   )

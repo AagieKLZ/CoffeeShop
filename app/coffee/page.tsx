@@ -44,12 +44,12 @@ export default async function Page( { searchParams } : { searchParams : { page :
         <>
             <Navbar />
             <main className='relative flex flex-col items-center justify-start w-full h-full px-8 py-4 pb-8 mx-auto mt-16'>
-                <div className='lg:w-[90%] w-full text-left text-orange-800 border-b border-b-orange-800 pb-4'>
-                    <h1 className='block text-3xl font-semibold text-transparent bg-gradient-to-r from-orange-700 to-emerald-700 bg-clip-text'>Our Coffees</h1>
+                <div className='lg:w-[90%] w-full text-left text-coffee-800 border-b border-b-coffee-800 pb-4'>
+                    <h1 className='block text-3xl font-semibold text-transparent bg-gradient-to-r from-coffee-700 to-emerald-700 bg-clip-text'>Our Coffees</h1>
                     <div className='mt-2 ml-4 text-lg font-light'>Meet our coffees from all around the globe</div>
                 </div>
                 <Filters />
-                <div className='grid w-[85%] grid-cols-1 gap-2 pb-4 my-4 place-items-center h-fit xl:grid-cols-3 xl:grid-rows-3 md:grid-rows-4 md:grid-cols-2'>
+                <div className='grid w-[85%] grid-cols-1 gap-4 pb-4 my-4 place-items-center h-fit xl:grid-cols-3 xl:grid-rows-3 md:grid-rows-4 md:grid-cols-2'>
                     {
                         coffees.map((coffee : Coffee, i: number) => (
                             <CoffeeCardV2 key={i} data={coffee} index={i} />

@@ -9,7 +9,7 @@ index: number
 
 export default function CoffeeCardV2({ data, index }: Props) {
   return (
-    <div className="relative flex flex-col items-center justify-between w-5/6 h-full drop-shadow-lg rounded-xl">
+    <div className="relative flex flex-col items-center justify-between w-5/6 h-full shadow-xl rounded-lg p-2 drop-shadow-lg">
       <div className="w-full p-2 rounded-xl h-1/2">
         <Image
           src={`/coffee${Number(index)+1}.jpg`}
@@ -19,7 +19,7 @@ export default function CoffeeCardV2({ data, index }: Props) {
           className="object-cover h-full mx-auto"
         />
       </div>
-      <div className="flex flex-col items-start justify-start w-full px-6 py-2 border-t rounded-b-lg border-t-orange-950 h-1/2">
+      <div className="flex flex-col items-start justify-start w-full px-6 py-2 border-t rounded-b-lg border-t-coffee-950 h-1/2">
         <div>
           <div className="flex flex-row flex-wrap w-full">
             <div className="flex flex-row items-center justify-start px-4 py-1 mt-2 mr-2 rounded-full w-fit bg-emerald-900 text-emerald-200">
@@ -52,16 +52,16 @@ export default function CoffeeCardV2({ data, index }: Props) {
             </div>
           </div>
         </div>
-        <div className="mt-2 text-lg font-semibold text-orange-950">
+        <div className="mt-2 text-lg font-semibold text-coffee-950">
             {data.name}
           </div>
-          <div className="text-lg font-semibold text-orange-900">
+          <div className="text-lg font-semibold text-coffee-900">
             {data.roaster}
           </div>
         <div className="flex justify-end w-full">
         <Link
           href={`./coffees/${encodeURI(data.name)}`}
-          className="flex justify-between px-2 py-2 text-center text-orange-200 bg-orange-800 rounded-lg w-36 hover:bg-orange-700"
+          className="flex justify-between px-2 py-2 text-center text-coffee-200 bg-coffee-800 rounded-lg w-36 hover:bg-coffee-700"
         >
           <div>Learn More</div>
           <svg

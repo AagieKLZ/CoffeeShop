@@ -6,13 +6,13 @@ export default function Filters({}: Props) {
   return (
     <form className="flex items-center justify-around w-full px-2 mt-4">
       <div className="flex">
-        <label htmlFor="roast" className="py-1 mr-2 text-lg text-orange-900">
+        <label htmlFor="roast" className="py-1 mr-2 text-lg text-coffee-900">
           Roast
         </label>
         <select
           name="roast"
           id="roast"
-          className="px-3 py-1 border border-orange-900 rounded-lg"
+          className="px-3 py-1 border border-coffee-900 rounded-lg"
         >
           <option value="">All</option>
           <option value="Dark">Dark</option>
@@ -23,13 +23,13 @@ export default function Filters({}: Props) {
         </select>
       </div>
       <div className="flex">
-        <label htmlFor="origin" className="py-1 mr-2 text-lg text-orange-900">
+        <label htmlFor="origin" className="py-1 mr-2 text-lg text-coffee-900">
           Origin
         </label>
         <select
           name="origin"
           id="origin"
-          className="px-3 py-1 border border-orange-900 rounded-lg"
+          className="px-3 py-1 border border-coffee-900 rounded-lg"
         >
           <option value="">All</option>
           <option value="Africa">Africa</option>
@@ -40,13 +40,13 @@ export default function Filters({}: Props) {
         </select>
       </div>
       <div className="flex">
-        <label htmlFor="sort" className="py-1 mr-2 text-lg text-orange-900 ">
+        <label htmlFor="sort" className="py-1 mr-2 text-lg text-coffee-900 ">
           Order By
         </label>
         <select
           name="sort"
           id="sort"
-          className="px-3 py-1 border border-orange-900 rounded-lg"
+          className="px-3 py-1 border border-coffee-900 rounded-lg"
         >
           <option value="name">Name</option>
           <option value="rating">Rating</option>
@@ -75,7 +75,7 @@ export default function Filters({}: Props) {
       <div className="relative flex items-center">
         <button
           type="submit"
-          className="absolute z-50 pr-2 bg-white border-r left-2 border-r-orange-900"
+          className="absolute z-50 pr-2 bg-white border-r left-2 border-r-coffee-900"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ export default function Filters({}: Props) {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6 text-orange-900 left-4"
+            className="w-6 h-6 text-coffee-900 left-4"
           >
             <path
               strokeLinecap="round"
@@ -96,10 +96,10 @@ export default function Filters({}: Props) {
           type="search"
           name="query"
           id="query"
-          className="py-1 pl-12 pr-1 text-orange-900 border border-orange-900 rounded-lg accent-white"
+          className="py-1 pl-12 pr-1 text-coffee-900 border border-coffee-900 rounded-lg accent-white"
         />
       </div>
-      <button className="w-32 py-1 font-semibold text-orange-100 bg-orange-700 rounded-lg hover:bg-orange-800 active:bg-orange-900">
+      <button className="w-32 py-1 font-semibold text-coffee-100 bg-coffee-700 rounded-lg hover:bg-coffee-800 active:bg-coffee-900">
         Search
       </button>
     </form>

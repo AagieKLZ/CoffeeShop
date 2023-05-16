@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import BackBtn from "./backbtn";
 import BackBg from "./backbg";
+import { PriceLabel } from "@/components/ui/label";
 
 const getCoffee = async (name: string): Promise<Coffee | null> => {
   prisma.$connect();
@@ -91,23 +92,7 @@ export default async function Page({ params }: { params: { name: string } }) {
                   </svg>
                   <div className="ml-2">{coffee.origin_2}</div>
                 </div>
-                <div className="flex flex-row items-center justify-start px-4 py-1 mt-4 text-blue-200 bg-blue-900 rounded-full w-fit">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  <div className="ml-2">{coffee.g_USD}$ / 100g</div>
-                </div>
+                <PriceLabel price={coffee.g_USD} />
               </div>
               <div className="flex items-center">
                 <span className="text-3xl text-rose-700">★</span>

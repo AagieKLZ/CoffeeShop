@@ -23,7 +23,10 @@ module.exports = {
         'coffee-700' : '#6F4518',
         'coffee-800' : '#603808',
         'coffee-900' : '#583101',
-
+      },
+      animationDuration: {
+        '2000': '2000ms',
+        
       }
     },
   },

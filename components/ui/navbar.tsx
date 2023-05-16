@@ -15,14 +15,21 @@ export default function Navbar({ }: Props) {
                 <div className='text-xl font-semibold'>CoffeeShop</div>
             </Link>
             <div className='flex-row items-center justify-center hidden h-full space-x-6 lg:flex'>
-                <Link href='#' className='flex items-center justify-center h-full text-xl text-center w-36 hover:border-b-4 border-b-coffee-800 hover:font-semibold'>Shop</Link>
-                <Link href='/coffee' className='flex items-center justify-center h-full text-xl text-center w-36 hover:border-b-4 border-b-coffee-800 hover:font-semibold'>Our Coffee</Link>
+                <Link href='/coffee' className='flex items-center justify-center h-full text-xl text-center w-36 hover:border-b-4 border-b-coffee-800 group supermenu'>
+                    <span className='group:hover:font-semibold'>Coffees</span>
+                    <div className='absolute z-[500] bg-yellow-50 flex flex-col w-56 border shadow-xl h-fit top-16 submenu animate-in fade-in-50 slide-in-from-top-2'>
+                        <Link href={"#"} className='flex items-center justify-start p-2 text-base border-b hover:bg-coffee-100 border-b-coffee-900 hover:font-semibold'>Coffees</Link>
+                        <Link href={"#"} className='flex items-center justify-start p-2 text-base border-b hover:bg-coffee-100 border-b-coffee-900 hover:font-semibold'>Coffee Quiz</Link>
+                        <Link href={"#"} className='flex items-center justify-start p-2 text-base hover:bg-coffee-100 hover:font-semibold'>Recomendations</Link>
+                    </div>
+                </Link>
+                <Link href='/pricing' className='flex items-center justify-center h-full text-xl text-center w-36 hover:border-b-4 border-b-coffee-800 hover:font-semibold'>Pricing</Link>
                 <Link href='#' className='flex items-center justify-center h-full text-xl text-center w-36 hover:border-b-4 border-b-coffee-800 hover:font-semibold'>About Us</Link>
             </div>
             <div className='flex flex-row items-center space-x-6'>
                 <Cart />
 
-                <Link href="/login" className='hidden py-2 font-semibold text-center text-black bg-coffee-500 rounded-lg cursor-pointer lg:block w-36 hover:bg-coffee-600'>Log In</Link>
+                <Link href="/login" className='hidden py-2 font-semibold text-center text-black rounded-lg cursor-pointer bg-coffee-500 lg:block w-36 hover:bg-coffee-600'>Log In</Link>
                 <input type="checkbox" name="side" id="side" className='hidden' />
                 <label htmlFor='side' className='block lg:hidden'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">

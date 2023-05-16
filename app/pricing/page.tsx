@@ -9,9 +9,9 @@ export default function Page({}: Props) {
   return (
     <>
         <Navbar />
-        <main className='relative flex flex-col items-center justify-start w-full h-full px-8 py-4 pb-8 mx-auto mt-16'>
-            <h1 className='mt-4 text-4xl text-center text-coffee-900'>Join Our Community</h1>
-            <div className='flex flex-col items-start md:w-3/4 w-[90%] mt-8 lg:space-y-0 space-y-4 lg:space-x-4 lg:flex-row xl:w-2/3'>
+        <main className='relative flex flex-col items-center justify-start w-full px-8 py-4 pt-16 pb-8 mx-auto'>
+            <h1 className='mt-4 text-4xl font-semibold text-center text-coffee-900'>Join Our Community</h1>
+            <div className='flex flex-col items-start md:w-3/4 w-[90%] mt-8 lg:space-y-0 space-y-4 lg:space-x-4 lg:flex-row xl:w-2/3 h-fit'>
               <PricingComponent>
                 <PricingHead name='Free Tier' />
                 <PricingBody>
